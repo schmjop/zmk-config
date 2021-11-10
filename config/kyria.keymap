@@ -196,7 +196,7 @@
 
 		alpha_layer {
             bindings = <
-            &kp C_AC_CUT	&kp DE_V		&kp DE_W		&kp DE_M		&kp DE_G		&kp DE_J																		&kp DE_ODIA		&kp DE_UDIA		&kp DE_ADIA		&dp DE_Q		&kp DE_SS		&kp LC(A)
+            &kp C_AC_CUT	&kp DE_V		&kp DE_W		&kp DE_M		&kp DE_G		&kp DE_J																		&kp DE_ODIA		&kp DE_UDIA		&kp DE_ADIA		&kp DE_Q		&kp DE_SS		&kp LC(A)
             &kp C_AC_COPY	&hm LGUI DE_S	&hm LALT DE_N	&hm LSHFT DE_R	&hm LCTRL DE_T	&kp DE_C																		&hm RCTRL DE_Y	&hm RSHFT DE_I	&hm RALT DE_E	&hm RGUI DE_A	&kp DE_H		&kp C_AC_UNDO
             &kp C_AC_PASTE	&kp DE_F		&kp DE_B		&kp DE_L		&kp DE_D		&kp DE_P		_____				&kp ESC			_____		_____			&kp DE_X		&kp DE_U		&kp DE_O		&kp DE_Z		&kp DE_K		&kp C_AC_REDO
             												&kp C_PP		_____			&kp TAB			&lt NAV SPACE		&lt SYM_R RET	&mo SYM_L	&slh NUM LSHFT	&lt FUN BSPC	&kp DE_DOT		&kp K_MUTE
