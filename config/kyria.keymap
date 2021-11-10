@@ -145,7 +145,7 @@
 
 // Other definitions
 #define _____ &none
-#define ----- &trans
+#define t____ &trans
 
 // Layers
 #define ALPHA	0
@@ -207,57 +207,57 @@
 
 		nav_layer {
             bindings = <
-            -----	_____		_____		_____		_____		_____																_____		_____		_____		_____		_____		-----
-            -----	&kp LGUI	&kp LALT	&kp LSHFT	&kp LCTRL	_____																_____		&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT	-----
-            -----	_____		_____		_____		_____		_____		-----			-----			-----		-----		_____		&kp HOME	&kp PG_DN	&kp PG_UP	&kp END		-----
-            								-----		-----		-----		-----			-----			-----		-----		&kp DEL		-----		-----
+            t____	_____		_____		_____		_____		_____																_____		_____		_____		_____		_____		t____
+            t____	&kp LGUI	&kp LALT	&kp LSHFT	&kp LCTRL	_____																_____		&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT	t____
+            t____	_____		_____		_____		_____		_____		t____			t____			t____		t____		_____		&kp HOME	&kp PG_DN	&kp PG_UP	&kp END		t____
+            								t____		t____		t____		t____			t____			t____		t____		&kp DEL		t____		t____
             >;
 
-			sensor-bindings = <----- ----- ----- ----- ----- ----->;
+			sensor-bindings = <t____ t____ t____ t____ t____ t____>;
 		};
 
 		num_layer {
             bindings = <
-            -----	_____		&kp N7		&kp N8		&kp N9		_____																_____		_____		_____		_____		_____		-----
-            -----	&kp DE_MINS	&kp N4		&kp N5		&kp N6		_____																_____		&kp RCTRL	&kp RSHFT	&kp RALT	&kp RGUI	-----
-            -----	&kp DE_PLUS	&kp N1		&kp N2		&kp N3		&kp N0		-----			-----			-----		-----		_____		_____		_____		_____		_____		-----
-            								-----		-----		-----		-----			-----			-----		-----		-----		-----		-----
+            t____	_____		&kp N7		&kp N8		&kp N9		_____																_____		_____		_____		_____		_____		t____
+            t____	&kp DE_MINS	&kp N4		&kp N5		&kp N6		_____																_____		&kp RCTRL	&kp RSHFT	&kp RALT	&kp RGUI	t____
+            t____	&kp DE_PLUS	&kp N1		&kp N2		&kp N3		&kp N0		t____			t____			t____		t____		_____		_____		_____		_____		_____		t____
+            								t____		t____		t____		t____			t____			t____		t____		t____		t____		t____
             >;
 
-			sensor-bindings = <----- ----- ----- ----- ----- ----->;
+			sensor-bindings = <t____ t____ t____ t____ t____ t____>;
 		};
 
 		fun_layer {
             bindings = <
-            -----	&kp F12		&kp F7		&kp F8		&kp F9		_____																_____		_____		_____		_____		_____		-----
-            -----	&kp F11		&kp F4		&kp F5		&kp F6		_____																_____		&kp RCTRL	&kp RSHFT	&kp RALT	&kp RGUI	-----
-            -----	&kp F10		&kp F1		&kp F2		&kp F3		_____		-----			-----			-----		-----		_____		_____		_____		_____		_____		-----
-            								-----		-----		-----		-----			-----			-----		-----		-----		-----		-----
+            t____	&kp F12		&kp F7		&kp F8		&kp F9		_____																_____		_____		_____		_____		_____		t____
+            t____	&kp F11		&kp F4		&kp F5		&kp F6		_____																_____		&kp RCTRL	&kp RSHFT	&kp RALT	&kp RGUI	t____
+            t____	&kp F10		&kp F1		&kp F2		&kp F3		_____		t____			t____			t____		t____		_____		_____		_____		_____		_____		t____
+            								t____		t____		t____		t____			t____			t____		t____		t____		t____		t____
             >;
 
-			sensor-bindings = <----- ----- ----- ----- ----- ----->;
+			sensor-bindings = <t____ t____ t____ t____ t____ t____>;
 		};
 
 		sym_r_layer {
             bindings = <
-            -----	_____		_____		_____		_____		_____																&kp DE_CIRC	&kp DE_LBRC	&kp DE_RBRC	&kp DE_DLR	&kp DE_EURO	-----
-            -----	&kp LGUI	&kp LALT	&kp LSHFT	&kp LCTRL	_____																&kp DE_PERC	&kp DE_LPRN	&kp DE_RPRN	&kp DE_COLN	&kp DE_SCLN	-----
-            -----	_____		_____		_____		_____		_____		-----			-----			-----		-----		&kp DE_AT	&kp DE_LCBR	&kp DE_RCBR	&kp DE_EXLM	&kp DE_AMPR	-----
-            								-----		-----		-----		-----			-----			-----		-----		-----		-----		-----
+            t____	_____		_____		_____		_____		_____																&kp DE_CIRC	&kp DE_LBRC	&kp DE_RBRC	&kp DE_DLR	&kp DE_EURO	t____
+            t____	&kp LGUI	&kp LALT	&kp LSHFT	&kp LCTRL	_____																&kp DE_PERC	&kp DE_LPRN	&kp DE_RPRN	&kp DE_COLN	&kp DE_SCLN	t____
+            t____	_____		_____		_____		_____		_____		t____			t____			t____		t____		&kp DE_AT	&kp DE_LCBR	&kp DE_RCBR	&kp DE_EXLM	&kp DE_AMPR	t____
+            								t____		t____		t____		t____			t____			t____		t____		t____		t____		t____
             >;
 
-			sensor-bindings = <----- ----- ----- ----- ----- ----->;
+			sensor-bindings = <t____ t____ t____ t____ t____ t____>;
 		};
 
 		sym_l_layer {
             bindings = <
-            -----	_____		&kp DE_PIPE	&kp DE_EQL	&kp DE_HASH	&kp DE_TILD															_____		_____		_____		_____		_____		-----
-            -----	&kp DE_LABK &kp DE_RABK	&kp DE_ASTR	&kp DE_SLSH	&kp DE_BSLS															_____		&kp RCTRL	&kp RSHFT	&kp RALT	&kp RGUI	-----
-            -----	&kp DE_ACUT	&kp DE_GRV	&kp DE_QUOT	&kp DE_DQUO	&kp DE_DEG	-----			-----			-----		-----		_____		_____		_____		_____		_____		-----
-            								-----		-----		-----		-----			-----			-----		-----		-----		-----		-----
+            t____	_____		&kp DE_PIPE	&kp DE_EQL	&kp DE_HASH	&kp DE_TILD															_____		_____		_____		_____		_____		t____
+            t____	&kp DE_LABK &kp DE_RABK	&kp DE_ASTR	&kp DE_SLSH	&kp DE_BSLS															_____		&kp RCTRL	&kp RSHFT	&kp RALT	&kp RGUI	t____
+            t____	&kp DE_ACUT	&kp DE_GRV	&kp DE_QUOT	&kp DE_DQUO	&kp DE_DEG	t____			t____			t____		t____		_____		_____		_____		_____		_____		t____
+            								t____		t____		t____		t____			t____			t____		t____		t____		t____		t____
             >;
 
-			sensor-bindings = <----- ----- ----- ----- ----- ----->;
+			sensor-bindings = <t____ t____ t____ t____ t____ t____>;
 		};
 	};
 };
