@@ -187,13 +187,6 @@
 			bindings = <&kp SPACE>, <&kp DE_UNDS>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
-		mm_quot: mod_morph_quote {
-			compatible = "zmk,behavior-mod-morph";
-			label = "MM_QUOTE";
-			#binding-cells = <0>;
-			bindings = <&kp DE_DOT>, <&kp DE_QUOT>;
-			mods = <(MOD_LSFT|MOD_RSFT)>;
-		};
 	};
 
 	keymap {
@@ -201,10 +194,10 @@
 
 		alpha_layer {
 			bindings = <
-			&kp C_AC_CUT	&kp DE_V		&kp DE_W		&kp DE_M		&kp DE_G		&kp DE_J																		&kp DE_ODIA		&kp DE_UDIA		&kp DE_ADIA		&kp DE_Q		&kp DE_SS		&kp LC(A)
-			&kp C_AC_COPY	&hm LGUI DE_S	&hm LALT DE_N	&hm LSHFT DE_R	&hm LCTRL DE_T	&kp DE_C																		&hm RCTRL DE_Y	&hm RSHFT DE_I	&hm RALT DE_E	&hm RGUI DE_A	&kp DE_H		&kp C_AC_UNDO
-			&kp C_AC_PASTE	&kp DE_F		&kp DE_B		&kp DE_L		&kp DE_D		&kp DE_P		_____				&kp ESC			_____		_____			&kp DE_X		&kp DE_U		&kp DE_O		&kp DE_Z		&kp DE_K		&kp C_AC_REDO
-															&kp C_PP		_____			&kp TAB			&lt NAV SPACE		&lt SYM_R RET	&mo SYM_L	&slh NUM LSHFT	&lt FUN BSPC	&kp DE_DOT		&kp K_MUTE
+			&kp C_AC_CUT	&kp DE_V		&kp DE_W		&kp DE_M		&kp DE_G		&kp DE_J																			&kp DE_ODIA		&kp DE_UDIA		&kp DE_ADIA		&kp DE_Q		&kp DE_SS		&kp LC(A)
+			&kp C_AC_COPY	&hm LGUI DE_S	&hm LALT DE_N	&hm LSHFT DE_R	&hm LCTRL DE_T	&kp DE_C																			&hm RCTRL DE_Y	&hm RSHFT DE_I	&hm RALT DE_E	&hm RGUI DE_A	&kp DE_H		&kp C_AC_UNDO
+			&kp C_AC_PASTE	&kp DE_F		&kp DE_B		&kp DE_L		&kp DE_D		&kp DE_P		_____				_____			_____			_____			&kp DE_X		&kp DE_U		&kp DE_O		&kp DE_Z		&kp DE_K		&kp C_AC_REDO
+															&kp C_PP		&kp ESC			&kp TAB			&lt NAV SPACE		&lt SYM_R RET	&lt SYM_L DEL	&slh NUM LSHFT	&lt FUN BSPC	&kp DE_DOT		&kp K_MUTE
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_NEXT C_PREV &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -215,7 +208,7 @@
 			t____	_____		_____		_____		_____		_____																_____		_____		_____		_____		_____		t____
 			t____	&kp LGUI	&kp LALT	&kp LSHFT	&kp LCTRL	_____																_____		&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT	t____
 			t____	_____		_____		_____		_____		_____		t____			t____			t____		t____		_____		&kp HOME	&kp PG_DN	&kp PG_UP	&kp END		t____
-											t____		t____		t____		t____			t____			t____		t____		&kp DEL		t____		t____
+											t____		t____		t____		t____			t____			t____		t____		t____		t____		t____
 			>;
 
 			sensor-bindings = <&inc_dec_kp t____ t____ &inc_dec_kp t____ t____>;
@@ -246,7 +239,7 @@
 		sym_r_layer {
 			bindings = <
 			t____	_____		_____		_____		_____		_____																&kp DE_CIRC	&kp DE_LBRC	&kp DE_RBRC	&kp DE_DLR	&kp DE_EURO	t____
-			t____	&kp LGUI	&kp LALT	&kp LSHFT	&kp LCTRL	_____																&kp DE_PERC	&kp DE_LPRN	&kp DE_RPRN	&kp DE_COLN	&kp DE_SCLN	t____
+			t____	&kp LGUI	&kp LALT	&kp LSHFT	&kp LCTRL	_____																&kp DE_PERC	&kp DE_LPRN	&kp DE_RPRN	&kp DE_COMM	&kp DE_SCLN	t____
 			t____	_____		_____		_____		_____		_____		t____			t____			t____		t____		&kp DE_AT	&kp DE_LCBR	&kp DE_RCBR	&kp DE_EXLM	&kp DE_AMPR	t____
 											t____		t____		t____		t____			t____			t____		t____		t____		t____		t____
 			>;
