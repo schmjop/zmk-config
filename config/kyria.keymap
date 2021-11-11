@@ -143,6 +143,9 @@
 // Row 1
 #define DE_BSLS LS(LA(NUMBER_7))	// (backslash)
 
+// Encoder resolutions
+&left_encoder	{ resolution = <2>; };
+&right_encoder	{ resolution = <4>; };
 
 // Other definitions
 #define _____ &none
