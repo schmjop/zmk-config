@@ -213,7 +213,7 @@
             								t____		t____		t____		t____			t____			t____		t____		&kp DEL		t____		t____
             >;
 
-			sensor-bindings = <t____ t____ t____ t____ t____ t____>;
+			sensor-bindings = <&inc_dec_kp t____ t____ &inc_dec_kp t____ t____>;
 		};
 
 		num_layer {
@@ -224,7 +224,7 @@
             								t____		t____		t____		t____			t____			t____		t____		t____		t____		t____
             >;
 
-			sensor-bindings = <t____ t____ t____ t____ t____ t____>;
+			sensor-bindings = <&inc_dec_kp t____ t____ &inc_dec_kp t____ t____>;
 		};
 
 		fun_layer {
@@ -235,7 +235,7 @@
             								t____		t____		t____		t____			t____			t____		t____		t____		t____		t____
             >;
 
-			sensor-bindings = <t____ t____ t____ t____ t____ t____>;
+			sensor-bindings = <&inc_dec_kp t____ t____ &inc_dec_kp t____ t____>;
 		};
 
 		sym_r_layer {
@@ -246,7 +246,7 @@
             								t____		t____		t____		t____			t____			t____		t____		t____		t____		t____
             >;
 
-			sensor-bindings = <t____ t____ t____ t____ t____ t____>;
+			sensor-bindings = <&inc_dec_kp t____ t____ &inc_dec_kp t____ t____>;
 		};
 
 		sym_l_layer {
@@ -257,7 +257,7 @@
             								t____		t____		t____		t____			t____			t____		t____		t____		t____		t____
             >;
 
-			sensor-bindings = <t____ t____ t____ t____ t____ t____>;
+			sensor-bindings = <&inc_dec_kp t____ t____ &inc_dec_kp t____ t____>;
 		};
 	};
 };
