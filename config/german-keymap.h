@@ -12,9 +12,9 @@
  * └─────┴────┴─────┴───────────────────────┴─────┴────┴─────┘
  */
 // Row 1
-#define DE_CIRC GRAVE // ^ (dead)
-#define DE_SS   MINUS // ß
-#define DE_ACUT EQUAL // ´ (dead)
+#define DE_CIRC GRAVE				// ^ (dead)
+#define DE_SS   MINUS				// ß
+#define DE_ACUT EQUAL				// ´ (dead)
 
 // Row 2
 #define DE_Q	Q					// Q
@@ -108,14 +108,14 @@
  * └─────┴────┴─────┴───────────────────────┴─────┴────┴─────┘
  */
 // Row 1
-#define DE_LBRC RA(NUMBER_5)		// [
-#define DE_RBRC RA(NUMBER_6)		// ]
-#define DE_PIPE RA(NUMBER_7)		// |
-#define DE_LCBR RA(NUMBER_8)		// {
-#define DE_RCBR RA(NUMBER_9)		// }
-#define DE_AT 	RA(DE_L)			// @
+#define DE_LBRC RA(NUMBER_8)		// [
+#define DE_RBRC RA(NUMBER_9)		// ]
+#define DE_PIPE RA(DE_LABK)			// |
+#define DE_LCBR RA(NUMBER_7)		// {
+#define DE_RCBR RA(NUMBER_0)		// }
+#define DE_AT 	RA(DE_Q)			// @
 #define DE_EURO RA(DE_E)			// €
-#define DE_TILD RA(DE_N)			// ~
+#define DE_TILD RA(DE_PLUS)			// ~
 
 /* Shift+Alted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬─────┐
@@ -131,4 +131,4 @@
  * └─────┴────┴─────┴───────────────────────┴─────┴────┴─────┘
  */
 // Row 1
-#define DE_BSLS RA(NUMBER_7)		// (backslash)
+#define DE_BSLS RA(DE_SS)			// (backslash)

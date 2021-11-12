@@ -61,14 +61,14 @@
 		compatible = "zmk,keymap";
 
 		alpha_layer {
-			bindings = <
+			bindings = <	
 			&lt PREF LC(DE_X)	&kp DE_V		&kp DE_W		&kp DE_M		&kp DE_G		&kp DE_J																			&kp DE_OE		&kp DE_UE		&kp DE_AE		&kp DE_Q		&kp DE_SS		&kp LC(DE_A)
-			&lt NAV LC(DE_C)	&hm LGUI DE_S	&hm LALT DE_N	&hm LSHFT DE_R	&hm LCTRL DE_T	&kp DE_C																			&hm RCTRL DE_Y	&hm RSHFT DE_I	&hm RALT DE_E	&hm RGUI DE_A	&kp DE_H		&kp LC(DE_Z)
+			&lt NAV LC(DE_C)	&hm LGUI DE_S	&hm LALT DE_N	&hm LSHFT DE_R	&hm LCTRL DE_T	&kp DE_C																			&kp DE_Y		&hm RCTRL DE_I	&hm RSHFT DE_E	&hm RALT DE_A	&hm RGUI DE_H	&kp LC(DE_Z)
 			&lt SYM_R LC(DE_V)	&kp DE_F		&kp DE_B		&kp DE_L		&kp DE_D		&kp DE_P			&sl NAV			&sl SYM_R		&sl SYM_L		&sl NUM			&kp DE_X		&kp DE_U		&kp DE_O		&kp DE_Z		&kp DE_K		&kp LC(DE_Y)
 																&kp C_PP		&kp ESC			&lt PREF TAB		&mm_unds		&lt SYM_R RET	&lt SYM_L DEL	&lst NUM LSHFT	&lt FUN BSPC	&kp DE_DOT		&kp K_MUTE
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_NEXT C_PREV &inc_dec_kp C_VOL_UP C_VOL_DN>;
+			sensor-bindings = <&inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
 
 		nav_layer {
@@ -79,7 +79,7 @@
 											t____		t____		t____		t____			t____			t____		t____		t____		t____		t____
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_AC_FORWARD C_AC_BACK &inc_dec_kp LEFT RIGHT>;
+			sensor-bindings = <&inc_dec_kp C_AC_BACK C_AC_FORWARD &inc_dec_kp LEFT RIGHT>;
 		};
 
 		num_layer {
@@ -90,7 +90,7 @@
 											t____		t____		t____		t____			t____			t____		t____		t____		t____		t____
 			>;
 
-			sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB)) &inc_dec_kp t____ t____>;
+			sensor-bindings = <&inc_dec_kp LS(TAB) TAB &inc_dec_kp t____ t____>;
 		};
 
 		fun_layer {
@@ -101,7 +101,7 @@
 											t____		t____		t____		t____			t____			t____		t____		t____		t____		t____
 			>;
 
-			sensor-bindings = <&inc_dec_kp F3 LS(F3) &inc_dec_kp t____ t____>;
+			sensor-bindings = <&inc_dec_kp LS(F3) F3 &inc_dec_kp t____ t____>;
 		};
 
 		sym_r_layer {
@@ -123,7 +123,7 @@
 											t____		t____		t____		t____			t____			t____		t____		t____		t____		t____
 			>;
 
-			sensor-bindings = <&inc_dec_kp LA(TAB) LA(LS(TAB)) &inc_dec_kp t____ t____>;
+			sensor-bindings = <&inc_dec_kp t____ t____ &inc_dec_kp t____ t____>;
 		};
 
 		pref_layer {
@@ -134,7 +134,7 @@
 												_____		_____		_____		_____		_____			_____		_____		_____			_____			_____
 			>;
 
-			sensor-bindings = <&inc_dec_kp LC(DE_Y) LC(DE_Z) &inc_dec_kp C_BRI_INC C_BRI_DEC>;
+			sensor-bindings = <&inc_dec_kp LC(DE_Z) LC(DE_Y) &inc_dec_kp C_BRI_DEC C_BRI_INC>;
 		};
 	};
 };
