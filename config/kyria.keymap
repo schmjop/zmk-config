@@ -52,7 +52,7 @@
 			compatible = "zmk,behavior-mod-morph";
 			label = "MM_UNDERSCORE";
 			#binding-cells = <0>;
-			bindings = <&kp SPACE>, <&kp DE_UNDS>;
+			bindings = <&lt NAV SPACE>, <&kp UNDERSCORE>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 		mmult: mod_morph_underscore_layer_tap {
@@ -61,7 +61,7 @@
 			#binding-cells = <2>;
 			flavor = "tap-preferred";
 			tapping-term-ms = <200>;
-			bindings = <&mo>, <&mm_unds>;
+			bindings = <&mo>, <&kp>;
 		};
 	};
 
@@ -70,10 +70,10 @@
 
 		alpha_layer {
 			bindings = <
-			&kp LC(DE_X)	&kp DE_V		&kp DE_W		&kp DE_M		&kp DE_G		&kp DE_J																			&kp DE_OE		&kp DE_UE		&kp DE_AE		&kp DE_Q		&kp DE_SS		&kp LC(DE_A)
-			&kp LC(DE_C)	&hm LGUI DE_S	&hm LALT DE_N	&hm LSHFT DE_R	&hm LCTRL DE_T	&kp DE_C																			&hm RCTRL DE_Y	&hm RSHFT DE_I	&hm RALT DE_E	&hm RGUI DE_A	&kp DE_H		&kp LC(DE_Z)
-			&kp LC(DE_V)	&kp DE_F		&kp DE_B		&kp DE_L		&kp DE_D		&kp DE_P		_____				_____			_____			_____			&kp DE_X		&kp DE_U		&kp DE_O		&kp DE_Z		&kp DE_K		&kp LC(DE_Y)
-															&kp C_PP		&kp ESC			&kp TAB			&mmult NAV			&lt SYM_R RET	&lt SYM_L DEL	&lst NUM LSHFT	&lt FUN BSPC	&kp DE_DOT		&kp K_MUTE
+			&kp LC(DE_X)	&kp DE_V		&kp DE_W		&kp DE_M		&kp DE_G		&kp DE_J																		&kp DE_OE		&kp DE_UE		&kp DE_AE		&kp DE_Q		&kp DE_SS		&kp LC(DE_A)
+			&kp LC(DE_C)	&hm LGUI DE_S	&hm LALT DE_N	&hm LSHFT DE_R	&hm LCTRL DE_T	&kp DE_C																		&hm RCTRL DE_Y	&hm RSHFT DE_I	&hm RALT DE_E	&hm RGUI DE_A	&kp DE_H		&kp LC(DE_Z)
+			&kp LC(DE_V)	&kp DE_F		&kp DE_B		&kp DE_L		&kp DE_D		&kp DE_P		_____			_____			_____			_____			&kp DE_X		&kp DE_U		&kp DE_O		&kp DE_Z		&kp DE_K		&kp LC(DE_Y)
+															&kp C_PP		&kp ESC			&kp TAB			&mm_unds		&lt SYM_R RET	&lt SYM_L DEL	&lst NUM LSHFT	&lt FUN BSPC	&kp DE_DOT		&kp K_MUTE
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_NEXT C_PREV &inc_dec_kp C_VOL_UP C_VOL_DN>;
