@@ -85,7 +85,7 @@
 		num_layer {
 			bindings = <
 			t____	_____		&kp N7		&kp N8		&kp N9		_____																_____		_____		_____		_____		_____		t____
-			t____	&kp DE_MINS	&kp N4		&kp N5		&kp N6		_____																_____		&kp RCTRL	&kp RSHFT	&kp RALT	&kp RGUI	t____
+			t____	&kp DE_MINS	&kp N4		&kp N5		&kp N6		_____																_____		&kp LCTRL	&kp LSHFT	&kp LALT	&kp LGUI	t____
 			t____	&kp DE_PLUS	&kp N1		&kp N2		&kp N3		&kp N0		t____			t____			t____		t____		_____		_____		_____		_____		_____		t____
 											t____		t____		t____		t____			t____			t____		t____		t____		t____		t____
 			>;
@@ -96,7 +96,7 @@
 		fun_layer {
 			bindings = <
 			t____	&kp F12		&kp F7		&kp F8		&kp F9		_____																_____		_____		_____		_____		_____		t____
-			t____	&kp F11		&kp F4		&kp F5		&kp F6		_____																_____		&kp RCTRL	&kp RSHFT	&kp RALT	&kp RGUI	t____
+			t____	&kp F11		&kp F4		&kp F5		&kp F6		_____																_____		&kp LCTRL	&kp LSHFT	&kp LALT	&kp LGUI	t____
 			t____	&kp F10		&kp F1		&kp F2		&kp F3		_____		t____			t____			t____		t____		_____		_____		_____		_____		_____		t____
 											t____		t____		t____		t____			t____			t____		t____		t____		t____		t____
 			>;
@@ -118,7 +118,7 @@
 		sym_l_layer {
 			bindings = <
 			t____	_____		&kp DE_PIPE	&kp DE_EQL	&kp DE_HASH	&kp DE_TILD															_____		_____		_____		_____		_____		t____
-			t____	&kp DE_LABK &kp DE_RABK	&kp DE_ASTR	&kp DE_SLSH	&kp DE_BSLS															_____		&kp RCTRL	&kp RSHFT	&kp RALT	&kp RGUI	t____
+			t____	&kp DE_LABK &kp DE_RABK	&kp DE_ASTR	&kp DE_SLSH	&kp DE_BSLS															_____		&kp LCTRL	&kp LSHFT	&kp LALT	&kp LGUI	t____
 			t____	&kp DE_ACUT	&kp DE_GRV	&kp DE_QUOT	&kp DE_DQUO	&kp DE_DEG	t____			t____			t____		t____		_____		_____		_____		_____		_____		t____
 											t____		t____		t____		t____			t____			t____		t____		t____		t____		t____
 			>;
