@@ -52,16 +52,8 @@
 			compatible = "zmk,behavior-mod-morph";
 			label = "MM_UNDERSCORE";
 			#binding-cells = <0>;
-			bindings = <&lt NAV SPACE>, <&kp UNDERSCORE>;
+			bindings = <&lt NAV SPACE>, <&kp DE_UNDS>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
-		};
-		mmult: mod_morph_underscore_layer_tap {
-			compatible = "zmk,behavior-hold-tap";
-			label = "MM_UNDERSCORE_LAYER_TAP";
-			#binding-cells = <2>;
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			bindings = <&mo>, <&kp>;
 		};
 	};
 
