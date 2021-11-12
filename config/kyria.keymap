@@ -58,7 +58,7 @@
 		mmult: mod_morph_underscore_layer_tap {
 			compatible = "zmk,behavior-hold-tap";
 			label = "MM_UNDERSCORE_LAYER_TAP";
-			#binding-cells = <1>;
+			#binding-cells = <2>;
 			flavor = "tap-preferred";
 			tapping-term-ms = <200>;
 			bindings = <&mo>, <&mm_unds>;
