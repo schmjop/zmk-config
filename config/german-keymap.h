@@ -94,7 +94,7 @@
 #define DE_COLN LS(DE_DOT)  		// :
 #define DE_UNDS LS(DE_MINS) 		// _
 
-/* Alted symbols
+/* Alted symbols (Mac)
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬─────┐
  * │ „ │ ¡ │ “ │ ¶ │ ¢ │ [ │ ] │ | │ { │ } │ ≠ │ ¿ │   │     │
  * ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬───┤
@@ -108,14 +108,23 @@
  * └─────┴────┴─────┴───────────────────────┴─────┴────┴─────┘
  */
 // Row 1
-#define DE_LBRC RA(NUMBER_8)		// [
-#define DE_RBRC RA(NUMBER_9)		// ]
-#define DE_PIPE RA(DE_LABK)			// |
-#define DE_LCBR RA(NUMBER_7)		// {
-#define DE_RCBR RA(NUMBER_0)		// }
-#define DE_AT 	RA(DE_Q)			// @
-#define DE_EURO RA(DE_E)			// €
-#define DE_TILD RA(DE_PLUS)			// ~
+#define DE_EURO     RA(DE_E)		// €
+// Win
+#define DE_W_LBRC   RA(NUMBER_8)	// [
+#define DE_W_RBRC   RA(NUMBER_9)	// ]
+#define DE_W_PIPE   RA(DE_LABK)		// |
+#define DE_W_LCBR   RA(NUMBER_7)	// {
+#define DE_W_RCBR   RA(NUMBER_0)	// }
+#define DE_W_AT     RA(DE_Q)		// @
+#define DE_W_TILD   RA(DE_PLUS)		// ~
+// Mac
+#define DE_M_LBRC   LA(NUMBER_5)	// [
+#define DE_M_RBRC   LA(NUMBER_6)	// ]
+#define DE_M_PIPE   LA(NUMBER_7)	// |
+#define DE_M_LCBR   LA(NUMBER_8)	// {
+#define DE_M_RCBR   LA(NUMBER_9)	// }
+#define DE_M_AT     LA(DE_L)		// @
+#define DE_M_TILD   LA(DE_N)		// ~
 
 /* Shift+Alted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬─────┐
@@ -131,4 +140,7 @@
  * └─────┴────┴─────┴───────────────────────┴─────┴────┴─────┘
  */
 // Row 1
-#define DE_BSLS RA(DE_SS)			// (backslash)
+// Win
+#define DE_W_BSLS RA(DE_SS)         // (backslash)
+// Mac
+#define DE_M_BSLS LS(LA(NUMBER_7))  // (backslash)
