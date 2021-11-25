@@ -94,8 +94,8 @@
 		sym_l_win_layer {
 			bindings = <
 			t____	_____		&kp DE_W_PIPE	&kp DE_EQL	&kp DE_HASH	&kp DE_W_TILD													_____		_____		_____		_____		_____		t____
-			t____	&kp DE_LABK &kp DE_RABK		&kp DE_ASTR	&kp DE_SLSH	&kp DE_W_BSLS													_____		&kp LCTRL	&kp LSHFT	&kp LALT	&kp LGUI	t____
-			t____	&kp DE_ACUT	&kp DE_GRV		&kp DE_QUOT	&kp DE_DQUO	&kp DE_DEG		t____		t____		t____		t____		_____		_____		_____		_____		_____		t____
+			t____	&kp DE_SCLN	&kp DE_COMM		&kp DE_ASTR	&kp DE_SLSH	&kp DE_W_BSLS													_____		&kp LCTRL	&kp LSHFT	&kp LALT	&kp LGUI	t____
+			t____	&kp DE_AMPR	&kp DE_EXLM		&kp DE_QUOT	&kp DE_DQUO	&kp DE_DEG		t____		t____		t____		t____		_____		_____		_____		_____		_____		t____
 												t____		t____		t____			t____		t____		t____		t____		t____		t____		t____
 			>;
 
@@ -105,8 +105,8 @@
 		sym_r_win_layer {
 			bindings = <
 			t____	_____		_____		_____		_____		_____														&kp DE_CIRC	&kp DE_W_LBRC	&kp DE_W_RBRC	&kp DE_DLR	&kp DE_EURO	t____
-			t____	&kp LGUI	&kp LALT	&kp LSHFT	&kp LCTRL	_____														&kp DE_PERC	&kp DE_LPRN		&kp DE_RPRN		&kp DE_COMM	&kp DE_SCLN	t____
-			t____	_____		_____		_____		_____		_____		t____		t____		t____		t____		&kp DE_W_AT	&kp DE_W_LCBR	&kp DE_W_RCBR	&kp DE_EXLM	&kp DE_AMPR	t____
+			t____	&kp LGUI	&kp LALT	&kp LSHFT	&kp LCTRL	_____														&kp DE_PERC	&kp DE_LPRN		&kp DE_RPRN		&kp DE_LABK	&kp DE_RABK	t____
+			t____	_____		_____		_____		_____		_____		t____		t____		t____		t____		&kp DE_W_AT	&kp DE_W_LCBR	&kp DE_W_RCBR	&kp DE_ACUT	&kp DE_GRV	t____
 											t____		t____		t____		t____		t____		t____		t____		t____		t____		t____
 			>;
 
@@ -172,8 +172,8 @@
 		sym_l_mac_layer {
 			bindings = <
 			t____	_____		&kp DE_M_PIPE	&kp DE_EQL	&kp DE_HASH	&kp DE_M_TILD													_____		_____		_____		_____		_____		t____
-			t____	&kp DE_LABK &kp DE_RABK		&kp DE_ASTR	&kp DE_SLSH	&kp DE_M_BSLS													_____		&kp LCTRL	&kp LSHFT	&kp LALT	&kp LGUI	t____
-			t____	&kp DE_ACUT	&kp DE_GRV		&kp DE_QUOT	&kp DE_DQUO	&kp DE_DEG		t____		t____		t____		t____		_____		_____		_____		_____		_____		t____
+			t____	&kp DE_SCLN	&kp DE_COMM		&kp DE_ASTR	&kp DE_SLSH	&kp DE_M_BSLS													_____		&kp LCTRL	&kp LSHFT	&kp LALT	&kp LGUI	t____
+			t____	&kp DE_AMPR	&kp DE_EXLM		&kp DE_QUOT	&kp DE_DQUO	&kp DE_DEG		t____		t____		t____		t____		_____		_____		_____		_____		_____		t____
 												t____		t____		t____			t____		t____		t____		t____		t____		t____		t____
 			>;
 
@@ -183,8 +183,8 @@
 		sym_r_mac_layer {
 			bindings = <
 			t____	_____		_____		_____		_____		_____														&kp DE_CIRC	&kp DE_M_LBRC	&kp DE_M_RBRC	&kp DE_DLR	&kp DE_EURO	t____
-			t____	&kp LGUI	&kp LALT	&kp LSHFT	&kp LCTRL	_____														&kp DE_PERC	&kp DE_LPRN		&kp DE_RPRN		&kp DE_COMM	&kp DE_SCLN	t____
-			t____	_____		_____		_____		_____		_____		t____		t____		t____		t____		&kp DE_M_AT	&kp DE_M_LCBR	&kp DE_M_RCBR	&kp DE_EXLM	&kp DE_AMPR	t____
+			t____	&kp LGUI	&kp LALT	&kp LSHFT	&kp LCTRL	_____														&kp DE_PERC	&kp DE_LPRN		&kp DE_RPRN		&kp DE_LABK	&kp DE_RABK	t____
+			t____	_____		_____		_____		_____		_____		t____		t____		t____		t____		&kp DE_M_AT	&kp DE_M_LCBR	&kp DE_M_RCBR	&kp DE_ACUT	&kp DE_GRV	t____
 											t____		t____		t____		t____		t____		t____		t____		t____		t____			t____
 			>;
 
