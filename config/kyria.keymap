@@ -95,7 +95,7 @@
 			bindings = <	
 			&lt PREF_W LC(DE_X)		&kp DE_V		&kp DE_W		&kp DE_M		&kp DE_G		&kp DE_J																				&kp DE_OE		&kp DE_UE		&kp DE_AE		&kp DE_Q		&kp DE_SS		&kp LC(DE_A)
 			&lt NAV_W LC(DE_C)		&hm LGUI DE_S	&hm LALT DE_N	&hm LSHFT DE_R	&hm LCTRL DE_T	&kp DE_C																				&kp DE_Y		&hm RCTRL DE_I	&hm RSHFT DE_E	&hm RALT DE_A	&hm RGUI DE_H	&kp LC(DE_Z)
-			&lt SYM_R_W LC(DE_V)	&kp DE_F		&kp DE_B		&kp DE_L		&kp DE_D		&kp DE_P			&sl NAV_W		&sl SYM_R_W		&sl SYM_L_W		&sl NUM_W			&kp DE_X		&kp DE_U		&kp DE_O		&kp DE_Z		&kp DE_K		&kp LC(DE_Y)
+			&lt SYM_R_W LC(DE_V)	&kp DE_F		&kp DE_B		&kp DE_L		&kp DE_D		&kp DE_P			&kp CAPS		&sl SYM_R_W		&sl SYM_L_W		&caps_word			&kp DE_X		&kp DE_U		&kp DE_O		&kp DE_Z		&kp DE_K		&kp LC(DE_Y)
 																	&kp C_PP		&kp ESC			&lt PREF_W TAB		&mm_unds_w		&lt SYM_R_W RET	&lt SYM_L_W DEL	&lst NUM_W LSHFT	&lt FUN_W BSPC	&kp DE_DOT		&kp K_MUTE
 			>;
 
@@ -118,7 +118,7 @@
 			t____	_____		_____		_____		_____		_____														&kp DE_CIRC	&kp DE_W_LBRC	&kp DE_W_RBRC	&kp DE_DLR	&kp DE_EURO	t____
 			t____	&kp LGUI	&kp LALT	&kp LSHFT	&kp LCTRL	_____														&kp DE_PERC	&kp DE_LPRN		&kp DE_RPRN		&kp DE_LABK	&kp DE_RABK	t____
 			t____	_____		_____		_____		_____		_____		t____		t____		t____		t____		&kp DE_W_AT	&kp DE_W_LCBR	&kp DE_W_RCBR	&kp DE_ACUT	&kp DE_GRV	t____
-											t____		t____		t____		t____		t____		t____		t____		t____		t____		t____
+											t____		t____		t____		t____		t____		t____		t____		t____		t____			t____
 			>;
 
 			sensor-bindings = <&inc_dec_kp t____ t____ &inc_dec_kp t____ t____>;
@@ -173,7 +173,7 @@
 			bindings = <	
 			&lt PREF_M LG(DE_X)		&kp DE_V		&kp DE_W		&kp DE_M		&kp DE_G		&kp DE_J																		&kp DE_OE		&kp DE_UE		&kp DE_AE		&kp DE_Q		&kp DE_SS		&kp LG(DE_A)
 			&lt NAV_M LG(DE_C)		&hm LGUI DE_S	&hm LALT DE_N	&hm LSHFT DE_R	&hm LCTRL DE_T	&kp DE_C																		&kp DE_Y		&hm RCTRL DE_I	&hm RSHFT DE_E	&hm RALT DE_A	&hm RGUI DE_H	&kp LG(DE_Z)
-			&lt SYM_R_M LG(DE_V)	&kp DE_F		&kp DE_B		&kp DE_L		&kp DE_D		&kp DE_P		&sl NAV_M	&sl SYM_R_M		&sl SYM_L_M		&sl NUM_M			&kp DE_X		&kp DE_U		&kp DE_O		&kp DE_Z		&kp DE_K		&kp LG(DE_Y)
+			&lt SYM_R_M LG(DE_V)	&kp DE_F		&kp DE_B		&kp DE_L		&kp DE_D		&kp DE_P		&kp CAPS	&sl SYM_R_M		&sl SYM_L_M		&caps_word			&kp DE_X		&kp DE_U		&kp DE_O		&kp DE_Z		&kp DE_K		&kp LG(DE_Y)
 																	&kp C_PP		&kp ESC			&lt PREF_M TAB	&mm_unds_m	&lt SYM_R_M RET	&lt SYM_L_M DEL	&lst NUM_M LSHFT	&lt FUN_M BSPC	&kp DE_DOT		&kp K_MUTE
 			>;
 
