@@ -39,6 +39,7 @@
 
 &sk	{ release-after-ms = <5000>; };
 &sl	{ release-after-ms = <5000>; };
+&lt { quick_tap_ms = <300>; };
 
 / {
     combos {
@@ -67,7 +68,7 @@
 			label = "LAYER_STICKY_TAP";
 			#binding-cells = <2>;
 			tapping-term-ms = <175>;
-			quick_tap_ms = <0>;
+			quick_tap_ms = <300>;
 			flavor = "tap-preferred";
 			bindings = <&mo>, <&sk>;
 		};
