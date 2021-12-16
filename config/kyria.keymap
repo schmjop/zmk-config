@@ -228,7 +228,7 @@
             t____   t____   t____   t____   t____   t____   t____   t____   t____   t____   t____   t____   t____   t____   t____   t____
                                     t____   t____   t____   t____   t____   t____   t____   t____   t____   t____
             >;
-            sensor-bindings = <&inc_dec_kp C_AC_BACK C_AC_FORWARD &inc_dec_kp t____ t____>;
+            sensor-bindings = <&inc_dec_kp LG(LEFT) LG(RIGHT) &inc_dec_kp t____ t____>;
         };
 
         pref_win_layer {
