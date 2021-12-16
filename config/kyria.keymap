@@ -11,6 +11,8 @@
 
 #include "german-keymap.h"
 
+// Global sticky timeout
+#define STICKY_TIMEOUT 10000
 
 // Encoder resolutions
 &left_encoder   { resolution = <2>; };
@@ -43,8 +45,8 @@
 #define PREF_M  13
 
 
-&sk { release-after-ms = <5000>; };
-&sl { release-after-ms = <5000>; };
+&sk { release-after-ms = <STICKY_TIMEOUT>; };
+&sl { release-after-ms = <STICKY_TIMEOUT>; };
 &lt { quick_tap_ms = <300>; };
 &caps_word {
   continue-list = <UNDERSCORE DE_MINS DE_PLUS BACKSPACE>;
@@ -72,6 +74,14 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        skq: sticky_key_quick_release {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_KEY_QUICK_RELEASE";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <STICKY_TIMEOUT>;
+            quick-release;
+        };
         lst: layer_sticky_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_STICKY_TAP";
@@ -79,11 +89,11 @@
             tapping-term-ms = <175>;
             quick_tap_ms = <300>;
             flavor = "tap-preferred";
-            bindings = <&mo>, <&sk>;
+            bindings = <&mo>, <&skq>;
         };
-        mm_unds: mod_morph_underscore_win {
+        mm_unds: mod_morph_underscore {
             compatible = "zmk,behavior-mod-morph";
-            label = "MM_UNDERSCORE_WIN";
+            label = "MM_UNDERSCORE";
             #binding-cells = <0>;
             bindings = <&lt NAV_W SPACE>, <&kp DE_UNDS>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
