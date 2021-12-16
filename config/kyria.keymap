@@ -5,8 +5,9 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #include "german-keymap.h"
 
@@ -236,7 +237,7 @@
 
         pref_win_layer {
             bindings = <
-            _____   _____   _____   _____   _____   _____                                   &bt BT_CLR      _____           _____           _____           &reset          _____
+            _____   _____   _____   _____   _____   _____                                   &bt BT_CLR      _____           _____           &out OUT_TOG    &reset          _____
             _____   _____   _____   _____   _____   _____                                   &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    _____
             _____   _____   _____   _____   _____   _____   _____   _____   _____   _____   &to ALPHA_M     &to ALPHA_W     _____           _____           _____           _____
                                     _____   _____   _____   _____   _____   _____   _____   _____           _____           _____
