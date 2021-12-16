@@ -45,6 +45,9 @@
 &sk { release-after-ms = <5000>; };
 &sl { release-after-ms = <5000>; };
 &lt { quick_tap_ms = <300>; };
+&caps_word {
+  continue-list = <UNDERSCORE DE_MINS DE_PLUS BACKSPACE>;
+};
 
 / {
     combos {
