@@ -128,9 +128,9 @@
         };
         alpha_mac_layer {
             bindings = <    
-            &lt PREF_M LG(DE_X)     t____   t____   t____   t____   t____                                   t____   t____   t____       t____   t____   &kp LG(DE_A)
-            &lt NAV_M LG(DE_C)      t____   t____   t____   t____   t____                                   t____   t____   t____       t____   t____   &kp LG(DE_Z)
-            &lt SYM_R_M LG(DE_V)    t____   t____   t____   t____   t____   t____   t____   t____   t____   t____   t____   t____       t____   t____   &kp LG(DE_Y)
+            &lt PREF_W LG(DE_X)     t____   t____   t____   t____   t____                                   t____   t____   t____       t____   t____   &kp LG(DE_A)
+            &lt NAV_W LG(DE_C)      t____   t____   t____   t____   t____                                   t____   t____   t____       t____   t____   &kp LG(DE_Z)
+            &lt SYM_R_W LG(DE_V)    t____   t____   t____   t____   t____   t____   t____   t____   t____   t____   t____   t____       t____   t____   &kp LG(DE_Y)
                                                     t____   t____   t____   t____   t____   t____   t____   t____   t____   &kp K_MUTE
             >;
             sensor-bindings = <&inc_dec_kp t____ t____ &inc_dec_kp t____ t____>;
@@ -190,7 +190,7 @@
             t____   t____   t____   t____   t____   t____   t____   t____   t____   t____   t____   t____   t____   t____   t____   t____
                                     t____   t____   t____   t____   t____   t____   t____   t____   t____   t____
             >;
-            sensor-bindings = <&inc_dec_kp t____ t____ &inc_dec_kp t____ t____>;
+            sensor-bindings = <&inc_dec_kp LS(TAB) TAB &inc_dec_kp t____ t____>;
         };
 
         fun_win_layer {
