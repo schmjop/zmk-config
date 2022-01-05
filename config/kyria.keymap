@@ -47,7 +47,6 @@
 
 &sk { release-after-ms = <STICKY_TIMEOUT>; };
 &sl { release-after-ms = <STICKY_TIMEOUT>; };
-&lt { quick_tap_ms = <300>; };
 &caps_word {
   continue-list = <UNDERSCORE DE_MINS DE_PLUS BACKSPACE>;
 };
@@ -82,12 +81,20 @@
             release-after-ms = <STICKY_TIMEOUT>;
             quick-release;
         };
+		ltqt: layer_tap_quick_tap {
+			compatible = "zmk,behavior-hold-tap";
+			label = "LAYER_TAP_QUICK_TAP";
+			#binding-cells = <2>;
+			flavor = "tap-preferred";
+			tapping-term-ms = <200>;
+            quick_tap_ms = <300>;
+			bindings = <&mo>, <&kp>;
+		};
         lst: layer_sticky_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_STICKY_TAP";
             #binding-cells = <2>;
             tapping-term-ms = <175>;
-            quick_tap_ms = <300>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&skq>;
         };
@@ -133,10 +140,10 @@
 
         alpha_win_layer {
             bindings = <    
-            &lt PREF_W LC(DE_X)     &kp DE_V        &kp DE_W        &kp DE_M        &kp DE_G        &kp DE_J                                                                        &kp DE_OE       &kp DE_UE       &kp DE_AE           &kp DE_Q        &kp DE_SS       &kp LC(DE_A)
-            &lt NAV_W LC(DE_C)      &hm LGUI DE_S   &hm LALT DE_N   &hm LSHFT DE_R  &hm LCTRL DE_T  &kp DE_C                                                                        &kp DE_Y        &hm RCTRL DE_I  &hm RSHFT DE_E      &hm LALT DE_A   &hm RGUI DE_H   &kp LC(DE_Z)
-            &lt SYM_R_W LC(DE_V)    &kp DE_F        &kp DE_B        &kp DE_L        &kp DE_D        &kp DE_P        &kp CAPS    &sl SYM_R_W     &sl SYM_L_W     &caps_word          &kp DE_X        &kp DE_U        &kp DE_O            &kp DE_Z        &kp DE_K        &kp LC(DE_Y)
-                                                                    &kp C_PP        &kp ESC         &lt PREF_W TAB  &mm_unds    &lt SYM_R_W RET &lt SYM_L_W DEL &lst NUM_W LSHFT    &lt FUN_W BSPC  &kp DE_DOT      &kp LG(LS(DE_A))
+            &lt PREF_W LC(DE_X)     &kp DE_V        &kp DE_W        &kp DE_M        &kp DE_G        &kp DE_J                                                                               &kp DE_OE         &kp DE_UE       &kp DE_AE           &kp DE_Q        &kp DE_SS       &kp LC(DE_A)
+            &lt NAV_W LC(DE_C)      &hm LGUI DE_S   &hm LALT DE_N   &hm LSHFT DE_R  &hm LCTRL DE_T  &kp DE_C                                                                               &kp DE_Y          &hm RCTRL DE_I  &hm RSHFT DE_E      &hm LALT DE_A   &hm RGUI DE_H   &kp LC(DE_Z)
+            &lt SYM_R_W LC(DE_V)    &kp DE_F        &kp DE_B        &kp DE_L        &kp DE_D        &kp DE_P          &kp CAPS    &sl SYM_R_W        &sl SYM_L_W        &caps_word         &kp DE_X          &kp DE_U        &kp DE_O            &kp DE_Z        &kp DE_K        &kp LC(DE_Y)
+                                                                    &kp C_PP        &kp ESC         &ltqt PREF_W TAB  &mm_unds    &ltqt SYM_R_W RET  &ltqt SYM_L_W DEL  &lst NUM_W LSHFT   &ltqt FUN_W BSPC  &kp DE_DOT      &kp LG(LS(DE_A))
             >;
             sensor-bindings = <&inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
