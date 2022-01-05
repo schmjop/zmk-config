@@ -48,7 +48,7 @@
 &sk { release-after-ms = <STICKY_TIMEOUT>; };
 &sl { release-after-ms = <STICKY_TIMEOUT>; };
 &caps_word {
-  continue-list = <UNDERSCORE DE_MINS DE_PLUS BACKSPACE>;
+  continue-list = <LSHFT RSHIFT DE_UNDS DE_MINS DE_PLUS DE_AE DE_OE DE_UE BSPC>;
 };
 
 / {
