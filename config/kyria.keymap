@@ -16,7 +16,7 @@
 
 // Encoder resolutions
 &left_encoder   { steps = <60>; };
-&right_encoder  { steps = <60>; };
+&right_encoder  { steps = <72>; };
 
 // None/Trans
 #define _____ &none
