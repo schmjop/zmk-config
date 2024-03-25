@@ -14,7 +14,8 @@
 // Global sticky timeout
 #define STICKY_TIMEOUT 10000
 
-// Encoder resolutions
+// Encoders
+&sensors        { triggers-per-rotation = <30>; };
 &left_encoder   { steps = <60>; };
 &right_encoder  { steps = <60>; };
 
@@ -270,9 +271,5 @@
             >;
             sensor-bindings = <&inc_dec_kp LG(DE_Z) LG(DE_Y) &inc_dec_kp t____ t____>;
         };
-    };
-
-    sensors {
-        triggers-per-rotation = <30>;
     };
 };
