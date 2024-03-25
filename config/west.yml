@@ -6,7 +6,7 @@ manifest:
       url-base: https://github.com/schmjop
   projects:
     - name: zmk
-      remote: schmjop
+      remote: zmkfirmware
       revision: main
       import: app/west.yml
   self:

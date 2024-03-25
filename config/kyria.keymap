@@ -271,4 +271,8 @@
             sensor-bindings = <&inc_dec_kp LG(DE_Z) LG(DE_Y) &inc_dec_kp t____ t____>;
         };
     };
+
+    sensors {
+        triggers-per-rotation = <30>;
+    };
 };
