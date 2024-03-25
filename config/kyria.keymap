@@ -14,9 +14,9 @@
 // Global sticky timeout
 #define STICKY_TIMEOUT 10000
 
-// Encoder resolutions
-&left_encoder   { resolution = <2>; };
-&right_encoder  { resolution = <4>; };
+// Encoder Steps (detents * resolution, here 30 * 2)
+&left_encoder   { steps = <60>; };
+&right_encoder  { steps = <60>; };
 
 // None/Trans
 #define _____ &none
