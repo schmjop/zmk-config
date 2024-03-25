@@ -14,7 +14,8 @@
 // Global sticky timeout
 #define STICKY_TIMEOUT 10000
 
-// Encoder Steps (detents * resolution, here 30 * 2)
+// Encoders
+&sensors        { triggers-per-rotation = <30>; };
 &left_encoder   { steps = <60>; };
 &right_encoder  { steps = <60>; };
 
