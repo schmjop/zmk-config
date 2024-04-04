@@ -141,7 +141,7 @@
             &lt SYM_R_W LC(DE_V)  &kp DE_F       &kp DE_B       &kp DE_L          &kp DE_D        &kp DE_P          &kp CAPS  &sl SYM_R_W          &sl SYM_L_W        &caps_word        &kp DE_X          &kp DE_U        &kp DE_O        &kp DE_Z       &kp DE_K       &kp LC(DE_Y)
                                                                 &kp LG(LS(DE_A))  &kp ESC         &ltqt PREF_W TAB  &mm_unds  &ltqt SYM_R_W RET    &ltqt SYM_L_W DEL  &lst NUM_W LSHFT  &ltqt FUN_W BSPC  &kp DE_DOT      &kp C_PP
             >;
-            sensor-bindings = <&inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp N0 N1 &inc_dec_kp N2 N3>;
         };
         alpha_mac_layer {
             bindings = <
