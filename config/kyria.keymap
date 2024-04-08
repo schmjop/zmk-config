@@ -15,9 +15,9 @@
 #define STICKY_TIMEOUT 10000
 
 // Encoders
-&sensors        { triggers-per-rotation = <30>; };
-&left_encoder   { steps = <60>; };
-&right_encoder  { steps = <120>; };
+&sensors        { triggers-per-rotation = <20>; };
+&left_encoder   { steps = <20>; };
+&right_encoder  { steps = <20>; };
 
 // None/Trans
 #define _____ &none
