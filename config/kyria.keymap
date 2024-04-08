@@ -16,8 +16,8 @@
 
 // Encoders
 &sensors        { triggers-per-rotation = <20>; };
-&left_encoder   { steps = <20>; };
-&right_encoder  { steps = <20>; };
+&left_encoder   { steps = <40>; };
+&right_encoder  { steps = <40>; };
 
 // None/Trans
 #define _____ &none
