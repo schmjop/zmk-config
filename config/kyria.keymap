@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #include "german-keymap.h"
 
@@ -101,6 +102,11 @@
             bindings = <&lt NAV_W SPACE>, <&kp DE_UNDS>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        scroll_encoder: scroll_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        };
     };
 
     conditional_layers {
@@ -179,7 +185,7 @@
             t____  _____     _____     _____      _____      _____  t____  t____    t____  t____  &kp DE_W_AT  &kp DE_W_LCBR  &kp DE_W_RCBR  &kp DE_ACUT  &kp DE_GRV   t____
                                        t____      t____      t____  t____  t____    t____  t____  t____        t____          t____
             >;
-            sensor-bindings = <&inc_dec_kp t____ t____ &inc_dec_kp t____ t____>;
+            sensor-bindings = <&inc_dec_kp t____ t____ &scroll_encoder>;
         };
         sym_r_mac_layer {
             bindings = <
@@ -188,7 +194,7 @@
             t____  t____  t____  t____  t____  t____  t____  t____    t____  t____  &kp DE_M_AT  &kp DE_M_LCBR  &kp DE_M_RCBR  t____  t____  t____
                                  t____  t____  t____  t____  t____    t____  t____  t____        t____          t____
             >;
-            sensor-bindings = <&inc_dec_kp t____ t____ &inc_dec_kp t____ t____>;
+            sensor-bindings = <&inc_dec_kp t____ t____ &scroll_encoder>;
         };
 
         num_win_layer {
@@ -198,7 +204,7 @@
             t____  &kp DE_PLUS  &kp N1  &kp N2  &kp N3  &kp N0  t____  t____    t____  t____  _____  &kp DE_COMM        &kp DE_DOT         &kp DE_COLN       _____             t____
                                         t____   t____   t____   t____  t____    t____  t____  t____  t____              t____
             >;
-            sensor-bindings = <&inc_dec_kp LS(TAB) TAB &inc_dec_kp t____ t____>;
+            sensor-bindings = <&inc_dec_kp LS(TAB) TAB &inc_dec_kp LC(LG(LEFT)) LC(LG(RIGHT))>;
         };
         num_mac_layer {
             bindings = <
@@ -207,7 +213,7 @@
             t____  t____  t____  t____  t____  t____  t____  t____    t____  t____  t____  t____  t____  t____  t____  t____
                                  t____  t____  t____  t____  t____    t____  t____  t____  t____  t____
             >;
-            sensor-bindings = <&inc_dec_kp LS(TAB) TAB &inc_dec_kp t____ t____>;
+            sensor-bindings = <&inc_dec_kp LS(TAB) TAB &inc_dec_kp LC(LEFT) LC(RIGHT)>;
         };
 
         fun_win_layer {
@@ -217,7 +223,7 @@
             t____  &kp F10  &kp F1  &kp F2  &kp F3  _____  t____  t____    t____  t____  _____  _____      _____      _____     _____     t____
                                     t____   t____   t____  t____  t____    t____  t____  t____  t____      t____
             >;
-            sensor-bindings = <&inc_dec_kp LS(F3) F3 &inc_dec_kp t____ t____>;
+            sensor-bindings = <&inc_dec_kp LS(F3) F3 &inc_dec_kp PG_UP PG_DN>;
         };
         fun_mac_layer {
             bindings = <
@@ -226,7 +232,7 @@
             t____  t____  t____  t____  t____  t____  t____  t____    t____  t____  t____  t____  t____  t____  t____  t____
                                  t____  t____  t____  t____  t____    t____  t____  t____  t____  t____
             >;
-            sensor-bindings = <&inc_dec_kp LG(LS(DE_G)) LG(DE_G) &inc_dec_kp t____ t____>;
+            sensor-bindings = <&inc_dec_kp LG(LS(DE_G)) LG(DE_G) &inc_dec_kp PG_UP PG_DN>;
         };
 
         nav_win_layer {
@@ -245,7 +251,7 @@
             t____  t____  t____  t____  t____  t____  t____  t____    t____  t____  t____  t____  t____  t____  t____  t____
                                  t____  t____  t____  t____  t____    t____  t____  t____  t____  t____
             >;
-            sensor-bindings = <&inc_dec_kp LG(LEFT) LG(RIGHT) &inc_dec_kp t____ t____>;
+            sensor-bindings = <&inc_dec_kp LG(LEFT) LG(RIGHT) &inc_dec_kp LEFT RIGHT>;
         };
 
         pref_win_layer {
@@ -264,7 +270,7 @@
             t____  t____  t____  t____  t____  t____  t____  t____    t____  t____  t____  t____  t____  t____  t____  t____
                                  t____  t____  t____  t____  t____    t____  t____  t____  t____  t____
             >;
-            sensor-bindings = <&inc_dec_kp LG(DE_Z) LG(DE_Y) &inc_dec_kp t____ t____>;
+            sensor-bindings = <&inc_dec_kp LG(DE_Z) LG(DE_Y) &inc_dec_kp C_BRI_DEC C_BRI_INC>;
         };
     };
 };
