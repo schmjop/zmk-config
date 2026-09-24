@@ -1,0 +1,15 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <dt-bindings/gpio/gpio.h>
+
+// Hardware bodge: the right board's C6 through-hole has a faulty plated
+// via that shorts to GND once a pin is inserted (confirmed by resistance
+// testing with two different nice!nano modules). The encoder's A signal
+// is rerouted via a jumper wire to the unused D3/TXO pin instead.
+&right_encoder {
+    a-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+};
